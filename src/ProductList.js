@@ -1,10 +1,10 @@
 import React from 'react'
-import ProductItem from './ProductItem'
+import ProductItemContainer from './ProductItemContainer'
 
 export default ({ products }) => (
   <ul>
     {products.map(product => (
-      <ProductItem product={product} key={product.productId} />
+      <ProductItemContainer product={product} key={product.productId} />
     ))}
   </ul>
 )

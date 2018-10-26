@@ -6,3 +6,8 @@ export const addProduct = (name, price) => ({
   name,
   price
 })
+
+export const addToCart = productId => ({
+  type: 'ADD_TO_CART',
+  productId
+})
